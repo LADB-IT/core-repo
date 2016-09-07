@@ -1,5 +1,4 @@
 class profile::base {
-  class { '::ntp': }
   class { '::sudo': }
   sudo::conf { 'sudo':
   priority => 10,
