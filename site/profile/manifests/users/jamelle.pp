@@ -1,8 +1,10 @@
-class profile::users::jamelle {
+class profile::users::jamelle (
+  $password             = "",
+  ) {
   user { 'jamelle':
     ensure           => 'present',
     home             => '/home/jamelle',
-    password         => '$1$pBZsK.8/$7REdNYXdoYqR9OEDbWeQJ1',
+    password         => '$password',
     shell            => '/bin/bash',
     managehome       => true,
     groups           => 'sudo',
