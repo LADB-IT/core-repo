@@ -1,5 +1,5 @@
 class profile::users::jamelle (
-  $password             = "",
+  $password             = 'nopassword',
   ) {
   user { 'jamelle':
     ensure           => 'present',
